@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondage</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+<header class="title">
+<h1 id="sondage">Sondage concert</h1>
+</header>
+
+
+<div class="presentation">
+<p class="intro">Nous sommes <strong>Deluxe Music</strong>, une compagnie internationale de concert. <br/> Notre objectif est de partager les concerts à travers le monde entier, et de faire vivre au gens l'art de la musique.
+
+    <br/> Pour nous aider dans nos futurs projects, nous vous proposons un sondage pour mieux connaitre vos goûts. <br> Merci de votre collaboration.</p>
+</div>
+
+
+    <!--Lieu avec liste de sélection-->
+<main class="remplir">
+<form action="">
+    <div class="format">
+        <label class="intro" for="pays">Dans quel continent habitez-vous ?</label>
+        <select name="pays" id="pays">
+        <option value="Europe">Europe</option>
+        <option value="Àmerique">Àmerique/Àmerique du sud</option>
+        <option value="Afrique">Afrique</option>
+        <option value="Asie">Asie</option>
+        <option value="Australie">Australie</option>
+        </select>
+    </div>
+
+     <br>
+
+     <div class="format">
+        <p class="intro">Combien de concert avez-vous assisté ?</p>
+        <label for="concert"></label>
+        <input type="number" id="concert" name="concert" autofocus required min="1" max="99">
+     </div>
+
+     <br>
+     <!--vu qu'il ya plusieurs type de music j'ai decidé pour un textarea-->
+     <div class="format">
+        <p class="intro">Quel type de musique avez-vous apprécié ? </p>
+        <label for="description"></label>
+        <textarea name="description" id="description" cols="30" rows="5" required placeholder="écrivez ici..."></textarea>
+        <br>
+        <p class="intro">Pourquoi avez-vous aimé le(s) concert(s) en particulier? </p>
+        <label for="description"></label>
+        <textarea name="description" id="description" cols="100" rows="5" required placeholder="écrivez ici..."></textarea>
+     </div>
+    
+
+    <br>
+    <!--vu qu'il ya plusieurs état/ville/province de music j'ai decidé pour un textarea-->
+    <div class="format">
+        <p class="intro">Veuillez préciser l'état/ville/province:  </p>
+        <label for="precision"></label>
+        <textarea name="precision" id="precision" cols="30" rows="5" required placeholder="écrivez ici..."></textarea>
+    </div>
+    
+    <br>
+    <div class="format">
+        <fieldset class="square">
+        <legend class="intro">Informations Personnels</legend>
+        <label class="button" for="prénom">Prénom: </label>
+        <input class="button" type="text" id="prénom" name="prénom" autofocus required>
+       
+        <label class="button" for="nom">Nom: </label>
+        <input class="button" type="text" id="nom" name="nom" autofocus required>
+
+        <br>
+
+        <label class="button" for="adress">Courriel</label>
+        <input class="button" type="email" name="adress" id="adress" autofocus required>
+        <br>
+        <!--10 min pour les concerts pop par exemple-->
+        <label class="button" for="an">Âge</label>
+        <input id="buttonâge" type="number" name="an" id="an" min="10" max="99" autofocus required>
+    </fieldset>
+    </div>
+
+    
+
+    <div class="formatH">
+      <p class="intro">Pourquoi aimer-vous les concerts? <br>
+        <input type="radio" name="choix" value="passion" id="passion"> <label class="intro" for="passion">C'est ma passion</label><br>
+        <input type="radio" name="choix" value="passe-temps" id="passe-temps"> <label class="intro" for="passe-temps">C'est un passe-temps</label> <br>
+        <input type="radio" name="choix" value="amis" id="amis"> <label class="intro" for="amis">Pour être avec mes amis et se défouler</label> <br>
+        <input type="radio" name="choix" value="artistes" id=" artistes"> <label class="intro" for=" artistes">Pour entendre mes artistes préférés</label> <br>
+        <input type="radio" name="choix" value="but" id="but"> <label class="intro" for="but">Car je souhaite aussi jouez dans un concert</label> <br>
+        <input type="radio" name="choix" value="All" id="All"> <label class="intro" for="All">Tous les choix/Autre</label> <br>
+        <p class="intro">Si vous avez choisi Autre, veuillez préciser </p>
+        <label for="Autre"></label>
+        <textarea name="Autre" id="Autre" cols="100" rows="5"  placeholder="écrivez ici..."></textarea>
+    </p>  
+    </div>
+    
+  <br>
+  
+  <div class="formatH">
+<p class="intro">Veuillez cochez ce que vous penser être vrai:</p>
+    <input type="checkbox" name="horaires"  id="horaires"> <label class="intro" for="horaires">Les horaires sont adéquates</label><br>
+    <input type="checkbox" name="prix"  id="prix"> <label class="intro" for="prix">Le prix d'entrée est raisonnable</label> <br>
+    <input type="checkbox" name="nourriture"  id="nourriture"> <label class="intro" for="nourriture">La nourriture est de bonne qualité et affordable</label> <br>
+    <input type="checkbox" name="places"  id="places"> <label class="intro" for="places">Le nombre de places suffisantes</label> <br>
+    <input type="checkbox" name="securité"  id=" securité"> <label class="intro" for=" securité">La securité est efficace contre n'importe problème</label> <br>
+    <input type="checkbox" name="technique"  id="technique"> <label class="intro" for=" technique">Les matériaux techniques (la sonorisation, les éclairages...) est de bonne qualité</label><br>
+    
+  </div>
+    <br>
+    
+    <div class="format" >
+        <p class="intro">Écrivez de possibles améliorations ou un problème précis en détail: </p>
+        <label for="problème"></label>
+        <textarea name="problème" id="problème" cols="70" rows="7"  placeholder="écrivez ici..."></textarea> <br>
+        <input class="tiens" type="submit" value="Envoyer">
+        <input class="restart" type="reset" value="Refaire">
+    </div>
+    
+    
+   <br>
+
+
+</form>
+</main>
+
+    
+</body>
+</html>
